@@ -1,6 +1,8 @@
 # discogs-api-se4-profile
 Add users' Discogs.com releases to Social Engine 4 public profiles
 
+A very basic script which integrates via a few steps in Social Engine 4 admin.
+
 ##GMC Admin
 
 ###Settings > Profile Questions
@@ -49,7 +51,7 @@ Drag [HTML Block] from Available Blocks to bottom of Tab Container
 
 Edit the block
 
-```htnl
+```html
 <link href="/discogs.css" rel="stylesheet">
 <h2>Releases on Discogs</h2>
 <div id="discogs"></div>
