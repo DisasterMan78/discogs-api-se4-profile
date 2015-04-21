@@ -3,11 +3,17 @@ Add users' Discogs.com releases to Social Engine 4 public profiles
 
 A very basic script which integrates via a few steps in Social Engine 4 admin.
 
+##Upload
+
+Add discogs.css, discogs.js and discogs.php File to webroot of the Social Engine 4 installation
+
 ##GMC Admin
 
 ###Settings > Profile Questions
 
 Select first profile type to have the Discogs releases
+
+Heading name is not optional, and ordering is important for the CSS to hide the question on the profile page, and for the
 
 > Add Heading
 
@@ -36,7 +42,7 @@ Your artist ID would be 123456
 - Show on member profiles? : Show on Member Profiles
 - Show on Signup/Creation? : Show on Signup/Creation
 ```
-[Save Question]
+> Save Question
 
 
 For each additional profile type you can 'Duplicate existing' after clicking Add Question. This works for headings too.
@@ -64,4 +70,4 @@ Edit the block
 <script src="/discogs.js"></script>
 ```
 
-[Save Changes]
+> Save Changes
