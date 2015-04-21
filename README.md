@@ -20,7 +20,8 @@ Select first profile type to have the Discogs releases
 - Question Type : Integer
 - Question Label : What is your discogs artist ID?
 - Description :
-```If you have a discogs.com account, we can show the releases you have listed on discogs on your profile page.
+```
+If you have a discogs.com account, we can show the releases you have listed on discogs on your profile page.
 
 To work out your artist ID, take a look at your discogs release page.
 
@@ -31,7 +32,8 @@ Your artist ID would be 123456
 - Required? Not Required
 - Show on browse members page? : Hide on Browse Members
 - Show on member profiles? : Show on Member Profiles
-- Show on Signup/Creation? : Show on Signup/Creation```
+- Show on Signup/Creation? : Show on Signup/Creation
+```
 [Save Question]
 
 
