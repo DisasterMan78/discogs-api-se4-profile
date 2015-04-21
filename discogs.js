@@ -135,13 +135,18 @@
 
 var userName  = jQuery( 'li[data-field-id="78"] span:nth-of-type(2)' ).html(),
 		discogsId = jQuery( '.profile_fields.integration li:first-of-type span:nth-of-type(2)' ).html(),
+		firstName,
+		lastName,
 		error;
 
-if(typeof userName == 'undefined' ){
-	userName = jQuery( 'li[data-field-id="19"] span:nth-of-type(2)' ).html() + ' ' + jQuery( 'li[data-field-id="20"] span:nth-of-type(2)' ).html();
-}
+if( typeof userName == 'undefined' ){
+	firstName = jQuery( 'li[data-field-id="19"] span:nth-of-type(2)' ).html(),
+	lastName = jQuery( 'li[data-field-id="20"] span:nth-of-type(2)' ).html();
 
-console.log('typeof discogsId', typeof discogsId, discogsId, parseInt( discogsId, 10 ))
+	if( typeof firstName == 'undefined' && typeof firstName == 'undefined' ){
+		userName = firstName + ' ' + lastName;
+	}
+}
 
 if( typeof discogsId !== 'undefined' ){
 
@@ -154,11 +159,19 @@ if( typeof discogsId !== 'undefined' ){
 		});
 
 	}else{
-		error = 'Error: ' + userName + '\'s Discogs ID is incorrect. It must be a number';
+		if( typeof userName !== 'undefined' ){
+			error = 'Error: ' + userName + '\'s Discogs ID is incorrect. It must be a number';
+		}else{
+			error = 'Error: Discogs ID is incorrect. It must be a number';
+		}
 	}
 
 }else{
-	error = userName + ' has not added a Discogs ID to their profile';
+	if( typeof userName !== 'undefined' ){
+		error = userName + ' has not added a Discogs ID to their profile';
+	}else{
+		error = 'No Discogs added to this profile';
+	}
 }
 
 if(typeof error === 'string' && error.length){
