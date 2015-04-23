@@ -5,7 +5,7 @@ A very basic script which integrates via a few steps in Social Engine 4 admin.
 
 ##Upload
 
-Add discogs.css, discogs.js and discogs.php File to webroot of the Social Engine 4 installation
+Add discogs.css, discogs.js and discogs.php files to webroot of the Social Engine 4 installation
 
 ##GMC Admin
 
@@ -13,7 +13,7 @@ Add discogs.css, discogs.js and discogs.php File to webroot of the Social Engine
 
 Select first profile type to have the Discogs releases
 
-Heading name is not optional, and ordering is important for the CSS to hide the question on the profile page, and for the
+Heading name is not optional, and ordering and name are important for the CSS to hide the question on the profile page, and for the Javascript to find the hidden ID to build the API request.
 
 > Add Heading
 
